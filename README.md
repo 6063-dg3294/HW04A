@@ -32,7 +32,9 @@ I looked up how to write ":" in code and it's **+ ':' +**
 Using the same for loop, I drew the circle that changes size according to the minute change. 
 ![image description](./5.png)
 
-
+# Seconds
+I made the frame rate 1 and use second to decide random RGBs.  
+![image description](./6.png)
 
 
 

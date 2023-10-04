@@ -3,7 +3,7 @@
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // frameRate(1)
+  frameRate(1)
 
 }
 
@@ -16,9 +16,23 @@ let lastHour = -1
 let minuteSize = 30
 let lastMiniute = -1
 
+// let bgNum = second()
+// let bgColorR = bgNum
+// let bgColorG = 255 - bgNum
+// let bgColorB = random(bgNum)
+seed(1)
+
  function draw() {
-   background(255);
-   fill(0);
+
+  let bgNum = second()
+  let bgColorR = random(255 - bgNum)
+  let bgColorG = random(255 - bgNum)
+  let bgColorB = random(255 - bgNum)
+  background(bgColorR,bgColorG,bgColorB)
+
+
+   fill("yellow");
+   strokeWeight(0)
    let hourNum = hour()
 
    let rectX = width/2 - hourSize/2
@@ -36,27 +50,22 @@ let lastMiniute = -1
 
   fill ("purple")
   let minuteNum = minute()
-  // let circleX = width/2 - minuteSize/2
-  // let circleY = height/2 - minuteSize/2
    ellipse(width/2, height/2, minuteSize, minuteSize)
    if (minuteNum !== lastMiniute){
       lastMiniute = minuteNum;
       minuteSize = 10*minuteNum
     }
 
+
+
     
-   
-
-
-
-
-
+  
   
    // Text
-let t = 'dog'
-let s = hour() + ' : ' + minute() + ' : ' + second()
-textSize(30)
-text(s, 100, 100, 300, 70)
+  fill("white")
+  let s = hour() + ' : ' + minute() + ' : ' + second()
+  textSize(30)
+  text(s, 100, 100, 300, 70)
 
    
 
