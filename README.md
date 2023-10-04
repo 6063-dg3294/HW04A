@@ -17,6 +17,17 @@ I fixed it by naming the x and y positions to their relations of the 2/screen.
 ![image description](./2.png)
 
 
+# Clock Text
+Then, I feel like visuals are good, but a digital clock would be a great hint.   
+I want to explore text() to do this.  
+
+When I was checking the reference, I thought this might be helpful in creating fun gifs visuals in the future so I took a note here:  
+![image description](./3.png)
+
+I began by confirming where to put the text in case the display text might go bug later. 
+I looked up how to write ":" in code and it's **+ ':' +**
+![image description](./4.png)
+
 
 
 

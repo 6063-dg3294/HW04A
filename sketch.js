@@ -8,7 +8,7 @@ function setup() {
 }
 
 
-
+// Hour
 let xPos = 0
 let hourSize = 30
 let lastHour = -1
@@ -29,14 +29,14 @@ let lastHour = -1
     else{
       hourSize = 30
     }
-    
-
-
-    
-
    }
   
-   
+   // Text
+let t = 'dog'
+let s = hour() + ' : ' + minute() + ' : ' + second()
+textSize(30)
+text(s, 100, 100, 300, 70)
+
    
 
 
