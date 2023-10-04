@@ -28,6 +28,11 @@ I began by confirming where to put the text in case the display text might go bu
 I looked up how to write ":" in code and it's **+ ':' +**
 ![image description](./4.png)
 
+# Minutes
+Using the same for loop, I drew the circle that changes size according to the minute change. 
+![image description](./5.png)
+
+
 
 
 

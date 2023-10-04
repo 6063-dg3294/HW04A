@@ -8,10 +8,13 @@ function setup() {
 }
 
 
-// Hour
-let xPos = 0
+// Hour (Rect)
 let hourSize = 30
 let lastHour = -1
+
+// Minutes (Circle size)
+let minuteSize = 30
+let lastMiniute = -1
 
  function draw() {
    background(255);
@@ -30,6 +33,24 @@ let lastHour = -1
       hourSize = 30
     }
    }
+
+  fill ("purple")
+  let minuteNum = minute()
+  // let circleX = width/2 - minuteSize/2
+  // let circleY = height/2 - minuteSize/2
+   ellipse(width/2, height/2, minuteSize, minuteSize)
+   if (minuteNum !== lastMiniute){
+      lastMiniute = minuteNum;
+      minuteSize = 10*minuteNum
+    }
+
+    
+   
+
+
+
+
+
   
    // Text
 let t = 'dog'
