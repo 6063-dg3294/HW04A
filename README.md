@@ -1,5 +1,5 @@
 # Thinking
-A clock of 3 time dimensions...
+A clock of 3 time dimensions...  
 I want to do a changing number visual for the hour, ... wait, How about 
 
 ![image description](./1.jpg)
