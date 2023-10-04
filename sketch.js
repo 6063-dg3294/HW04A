@@ -31,24 +31,7 @@ seed(1)
   background(bgColorR,bgColorG,bgColorB)
 
 
-   fill("yellow");
-   strokeWeight(0)
-   let hourNum = hour()
-
-   let rectX = width/2 - hourSize/2
-   let rectY = height/2 - hourSize/2
-   rect(rectX, rectY, hourSize, hourSize);
-   if (hourNum !== lastHour){
-    if (hourNum !== 0){
-      lastHour = hourNum;
-      hourSize = 30*hourNum
-    }
-    else{
-      hourSize = 30
-    }
-   }
-
-  fill ("purple")
+  fill ("pink")
   let minuteNum = minute()
    ellipse(width/2, height/2, minuteSize, minuteSize)
    if (minuteNum !== lastMiniute){
@@ -56,7 +39,22 @@ seed(1)
       minuteSize = 10*minuteNum
     }
 
-
+    fill("orange");
+    strokeWeight(0)
+    let hourNum = hour()
+ 
+    let rectX = width/2 - hourSize/2
+    let rectY = height/2 - hourSize/2
+    rect(rectX, rectY, hourSize, hourSize);
+    if (hourNum !== lastHour){
+     if (hourNum !== 0){
+       lastHour = hourNum;
+       hourSize = 30*hourNum
+     }
+     else{
+       hourSize = 30
+     }
+    }
 
     
   
