@@ -4,6 +4,18 @@ I want to do a changing number visual for the hour, ... wait, How about
 
 ![image description](./1.jpg)
 
+# Hour
+I started with hour because I thought it would be the easist.  
+My logic:  
+1. Name an initial number
+2. write a if: if the number is not the initial number, make the initial number the hour now, and add the length of the rect
+I fixed the problem I encountered by moving the factor (hourSize) from outside the draw() to inside so it won't be refreshed every frame.   
+
+Problem: the rectangle is not in the center.  
+I fixed it by naming the x and y positions to their relations of the 2/screen.   
+
+![image description](./2.png)
+
 
 
 
